@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server/index.js",
-    "mongoServer": "mongod --dbpath C:/WorkspaceDesenvolvimento/relatorioHLM/node/relatorio/server/data",
+    "mongoServer": "mongod --dbpath C:/WorkspaceDesenvolvimento/relatorioHLM/node/relatorio/server/relatorioServer/data",
     "mongoCli": "mongo"
   },
   "keywords": [],
