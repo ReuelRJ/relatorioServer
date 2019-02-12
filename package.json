@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "https://www.youtube.com/watch?v=khCIunNAEHI\r 1:11:45",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/index.js",
+    "mongoServer": "mongod --dbpath C:/WorkspaceDesenvolvimento/relatorioHLM/node/relatorio/server/data",
+    "mongoCli": "mongo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.11",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10"
+  }
+}
