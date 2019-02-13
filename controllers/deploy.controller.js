@@ -9,7 +9,16 @@ deployCtrl.getAllDeploys = async (req, res) => {
 }
 
 deployCtrl.createDeploy = async (req, res) => {
-    const deploy = new Deploy(req.body)
+    const deploy = new Deploy({
+        emailPO: req.body.emailPO,
+        po: req.body.po,
+        data: req.body.data,
+        servico: req.body.servico,
+        status: req.body.status,
+        versao: req.body.versao,
+        releaseTFS: req.body.releaseTFS,
+        obs: req.body.obs
+    })
     await deploy.save();
     console.log( req.body);
     res.json({
