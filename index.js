@@ -11,6 +11,7 @@ app.set('port', process.env.PORT || 4000);
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors({origin: 'http://localhost:4200'}));
+app.use(cors({origin: 'http://localhost:4500'}));
 
 //routes
 app.use('/api/listDeploys',require('./routes/deploys.routes'));
